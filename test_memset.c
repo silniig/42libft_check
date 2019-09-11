@@ -6,7 +6,7 @@
 /*   By: gcody <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 15:49:41 by gcody             #+#    #+#             */
-/*   Updated: 2019/09/11 16:26:07 by gcody            ###   ########.fr       */
+/*   Updated: 2019/09/11 16:57:02 by gcody            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,11 @@
 
 int		test_memset(void)
 {
-	return (0);
+	char	*memory;
+	int		status;
+
+	status = 0;
+	memory = (char *)malloc(HUGE_BUFFER_SIZE);
+
+	return (status);
 }
