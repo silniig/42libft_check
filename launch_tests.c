@@ -6,7 +6,7 @@
 /*   By: gcody <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/11 16:03:15 by gcody             #+#    #+#             */
-/*   Updated: 2019/09/11 16:15:40 by gcody            ###   ########.fr       */
+/*   Updated: 2019/09/20 04:43:01 by gcody            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,7 @@ int		launch_tests(void)
 	result = 0;
 	if (test_memset() != 0)
 		result += 1;
+	if (test_memcpy() != 0)
+		result += 2;
 	return (result);
 }
